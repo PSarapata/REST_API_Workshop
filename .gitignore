@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Created by https://www.toptal.com/developers/gitignore/api/django,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=django,python
@@ -18,6 +19,10 @@ media
 
 ### Django.Python Stack ###
 # Byte-compiled / optimized / DLL files
+=======
+# Byte-compiled / optimized / DLL files
+__pycache__/
+>>>>>>> 11bb0d16b662bb28fc2ac3855795f03a9937a87d
 *.py[cod]
 *$py.class
 
@@ -68,12 +73,25 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+<<<<<<< HEAD
 pytestdebug.log
 
 # Translations
 *.mo
 
 # Django stuff:
+=======
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+>>>>>>> 11bb0d16b662bb28fc2ac3855795f03a9937a87d
 
 # Flask stuff:
 instance/
@@ -84,7 +102,10 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+<<<<<<< HEAD
 doc/_build/
+=======
+>>>>>>> 11bb0d16b662bb28fc2ac3855795f03a9937a87d
 
 # PyBuilder
 target/
@@ -124,7 +145,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+<<<<<<< HEAD
 pythonenv*
+=======
+>>>>>>> 11bb0d16b662bb28fc2ac3855795f03a9937a87d
 
 # Spyder project settings
 .spyderproject
@@ -143,6 +167,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+<<<<<<< HEAD
 
 # pytype static type analyzer
 .pytype/
@@ -212,4 +237,3 @@ dmypy.json
 # profiling data
 
 # End of https://www.toptal.com/developers/gitignore/api/django,python
-

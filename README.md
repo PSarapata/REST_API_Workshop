@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![Coders-Lab-1920px-no-background](https://user-images.githubusercontent.com/152855/73064373-5ed69780-3ea1-11ea-8a71-3d370a5e7dd8.png)
 
 # Kilka ważnych informacji
@@ -21,3 +22,7 @@ Poszczególne zadania rozwiązuj w odpowiednich plikach.
 ### Poszczególne zadania rozwiązuj w odpowiednich plikach.
 
 **Repozytorium z ćwiczeniami zostanie usunięte 2 tygodnie po zakończeniu kursu. Spowoduje to też usunięcie wszystkich forków, które są zrobione z tego repozytorium.**
+=======
+# REST_API_Workshop
+CodersLab REST API workshop - cinema screenings management
+>>>>>>> 11bb0d16b662bb28fc2ac3855795f03a9937a87d
