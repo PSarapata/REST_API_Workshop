@@ -15,7 +15,6 @@ def random_person():
 
 def fake_movie_data():
     """Generate a dict of movie data
-
     The format is compatible with serializers (`Person` relations
     represented by names).
     """

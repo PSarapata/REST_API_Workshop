@@ -2,13 +2,15 @@ import os
 import sys
 
 import pytest
+from faker import Faker
 from rest_framework.test import APIClient
 
 from movielist.models import Person
-from .utils import faker, create_fake_movie
-from showtimes.tests.utils import create_fake_cinema
+from movielist.tests.utils import create_fake_movie
+from .utils import create_fake_cinema
 
 sys.path.append(os.path.dirname(__file__))
+faker = Faker("pl_PL")
 
 
 @pytest.fixture
@@ -17,7 +19,6 @@ def client():
     return client
 
 
-@pytest.mark.django_db
 @pytest.fixture
 def set_up():
     for _ in range(5):
@@ -26,3 +27,4 @@ def set_up():
         create_fake_movie()
     for _ in range(3):
         create_fake_cinema()
+

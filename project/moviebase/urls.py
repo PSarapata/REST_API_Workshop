@@ -17,10 +17,16 @@ from django.contrib import admin
 from django.urls import path
 
 from movielist.views import MovieListView, MovieView
+from showtimes.views import CinemaListView, CinemaView, ScreeningListView, ScreeningView
 
-
+# API endpoints
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('movies/', MovieListView.as_view()),
-    path('movies/<int:pk>/', MovieView.as_view()),
+    path('movies/<int:pk>/', MovieView.as_view(), name="movie-details"),
+    path('cinemas/', CinemaListView.as_view(), name='cinemas-list'),
+    path('cinemas/<int:pk>/', CinemaView.as_view(), name='cinema-view'),
+    path('screenings/', ScreeningListView.as_view({'get': 'list', 'post': 'create', 'put': 'update'}),
+         name='screenings-list'),
+    path('screenings/<int:pk>/', ScreeningView.as_view(), name='screening-view'),
 ]

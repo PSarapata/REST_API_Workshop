@@ -1,7 +1,7 @@
 import pytest
 
 from movielist.models import Movie, Person
-from .utils import fake_movie_data, random_person
+from movielist.tests.utils import fake_movie_data, random_person
 
 
 @pytest.mark.django_db
